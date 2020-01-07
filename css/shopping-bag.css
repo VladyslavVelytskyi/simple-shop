@@ -1,0 +1,266 @@
+.sb-main-header__name {
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 18px 0 0;
+    border: none;
+    color: rgb(0, 0, 0);
+    font: bold 12px "OpenSans", sans-serif;
+    vertical-align: middle;
+    text-align: left;
+    text-decoration: none;
+    background: none;
+}
+
+.sb-main__content {
+    width: 100%;
+    padding: 69px 0 12px;
+}
+
+.sb-main__catalog > p {
+    padding: 20px 0;
+    font: bold 18px "OpenSans", sans-serif;
+    text-align: center;
+}
+
+.sb-main-catalog__item {
+    display: inline-block;
+    height: 223px;
+    width: 100%;
+    margin-bottom: 42px;
+    color: rgb(0, 0, 0);
+}
+
+.sb-main-catalog__item:hover .sb-main-catalog-item__img:before {
+    content: "View item";
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 102px 0 0;
+    color: rgb(241, 74, 88);
+    font: bold 18px "OpenSans", sans-serif;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.sb-main-catalog__item:hover .sb-main-catalog-item-description__name { color: rgb(241, 74, 88); }
+
+.sb-main-catalog-item__img {
+    float: left;
+    height: 223px;
+    width: 158px;
+    margin: 0 9px 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sb-main-catalog-item__description {
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    padding: 0 50px 0 13px;
+}
+
+.sb-main-catalog-item-description__name {
+    margin: 10px 0 5px;
+    font: bold 12px "Roboto", sans-serif;
+    line-height: 1.75;
+}
+
+.sb-main-catalog-item-description__price {
+    margin: 0 0 25px;
+    font: bold 14px "Roboto", sans-serif;
+}
+
+.sb-main-catalog-item-description__parameters {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+    font: 10px "Roboto", sans-serif;
+    line-height: 2;
+}
+
+.sb-main-catalog-item-description__button-remove {
+    padding: 0;
+    border: none;
+    color: rgb(241, 74, 88);
+    font: bold 11px "OpenSans", sans-serif;
+    background: none;
+}
+
+.sb-main__footer {
+    width: 100%;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+.sb-main-footer__prompt {
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(247, 247, 247);
+}
+
+.sb-main-footer-prompt__about {
+    margin: 0;
+    font: bold 10px "Open Sans", sans-serif;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.sb-main-footer-prompt__about span { color: rgb(241, 74, 88); }
+
+.sb-main-footer__buy { padding: 20px 0 35px; }
+
+.sb-main-footer-buy__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sb-main-footer-buy-content__clear-bag {
+    height: auto;
+    border: none;
+    background: none;
+    font: 10px "Roboto", sans-serif;
+    cursor: url(../img/pointer.png) 10 0, pointer;
+}
+
+.sb-main-footer-buy-content__buy-now {
+    box-sizing: border-box;
+    height: 62px;
+    width: 140px;
+    border: 1px solid rgb(229, 229, 229);
+    font: bold 18px "OpenSans", sans-serif;
+    background: none;
+}
+
+.sb-main-footer-buy-content__total {
+    font: 10px "Roboto", sans-serif;
+    text-align: right;
+}
+
+.sb-main-footer-buy-content__total p:first-child { margin: 0 0 5px; }
+
+.sb-main-footer-buy-content__total #total-price {
+    margin: 0;
+    font: bold 14px "Roboto", sans-serif;
+}
+
+
+
+/*----- for screens more than 768px ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+
+    .sb-main-header__name { font-size: 20px; }
+
+    .sb-main__content { padding: 95px 0 12px; }
+
+    .sb-main__catalog > p { font-size: 20px; }
+
+    .sb-main-catalog__item {
+        display: inline-block;
+        height: 205px;
+        width: 50%;
+        margin: 0 0 96px;
+    }
+
+    .sb-main-catalog-item__img {
+        height: 205px;
+        width: 145px;
+    }
+
+    .sb-main-catalog-item-description__name { font-size: 14px; }
+
+    .sb-main-catalog-item-description__price { margin: 0 0 10px; }
+
+    .sb-main-catalog-item-description__parameters {
+        margin: 0 0 5px;
+        font-size: 12px;
+    }
+
+    .sb-main-catalog-item-description__button-remove { font-size: 13px; }
+
+    .sb-main-footer__prompt { padding: 11px 0; }
+
+    .sb-main-footer-prompt__about { font-size: 11px; }
+
+    .sb-main-footer__buy { padding: 30px 0 60px; }
+
+    .sb-main-footer-buy-content__clear-bag { font: bold 13px "Roboto", sans-serif; }
+
+    .sb-main-footer-buy-content__buy-now {
+        height: 70px;
+        width: 261px;
+        font-size: 20px;
+    }
+
+    .sb-main-footer-buy-content__total { font-size: 12px; }
+
+    .sb-main-footer-buy-content__total #total-price { font-size: 16px; }
+}
+
+
+
+/*----- for screens more than 1024px ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+
+    .g-main__header {
+        top: 120px;
+        height: 65px;
+    }
+    .sb-main-header__name {
+        padding-top: 12px;
+        font-size: 26px;
+    }
+
+    .sb-main__content { padding: 91px 0 26px; }
+
+    .sb-main__catalog > p {
+        padding: 40px 0;
+        font-size: 22px;
+    }
+
+    .sb-main-catalog__item {
+        height: 340px;
+        width: 50%;
+        margin: 0 0 91px;
+    }
+
+    .sb-main-catalog-item__img {
+        height: 340px;
+        width: 240px;
+        margin: 0 13px 0 0;
+    }
+
+    .sb-main-catalog-item__description {
+        float: left;
+        width: 199px;
+    }
+
+    .sb-main-catalog__item:hover .sb-main-catalog-item__img:before {
+        font-size: 22px;
+        padding: 159px 0 0;
+    }
+
+    .sb-main-catalog-item-description__price,
+    .sb-main-catalog-item-description__parameters { margin: 0 0 25px; }
+
+    .sb-main-footer-buy__content {
+        box-sizing: border-box;
+        padding: 0 25px;
+    }
+
+    .sb-main-footer-buy-content__buy-now {
+        height: 75px;
+        width: 340px;
+        font-size: 24px;
+    }
+
+    .sb-main-footer-buy-content__total #total-price { font-size: 18px; }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Template</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <header class="g-header">
+        <div class="g-container">
+            <div class="g-header__logo">
+                <a href="start.html" class="g-header-logo__item g-header-logo__item_short">TL</a>
+                <a href="start.html" class="g-header-logo__item g-header-logo__item_long">Template</a>
+            </div>
+            <div class="g-header__top">
+                <a href="#" class="g-header-top__sign">E-mail sign up</a>
+                <a href="shopping-bag.html" class="g-header-top__bag">
+                    <img src="img/icon_bag.png" alt="bag" class="g-header-top-bag__img">
+                    <p class="g-header-bag__text">Bag <span id="bag-price"></span>(<span id="bag-size">0</span>)</p>
+                </a>
+            </div>
+            <div class="g-header__menu">
+                <div class="g-header-menu__button" id="icon-menu">
+                    <div class="g-header-menu-button__bar"></div>
+                    <div class="g-header-menu-button__bar"></div>
+                    <div class="g-header-menu-button__bar"></div>
+                </div>
+                <nav class="g-header-menu__nav">
+                    <ul class="g-header-menu-nav__list">
+                        <li><a href="catalog.html">Women</a></li>
+                        <li><a href="catalog.html">Men</a></li>
+                        <li><a href="catalog.html">Handbags</a></li>
+                        <li><a href="catalog.html">Accessories</a></li>
+                        <li><a href="catalog.html">Sale</a></li>
+                        <li><a href="catalog.html">New Arrivals</a></li>
+                        <li><a href="catalog.html">Clearance</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                    </ul>
+                    <div class="g-header-menu__search">
+                        <input type="search" id="menu-search" name="search" class="g-header-menu-search__field" placeholder="Style Name">
+                        <button class="g-header-menu-search__button" id="button-search">
+                            <img src="img/search_icon.png" alt="search">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="g-main">
+        <header class="g-main__header c-main-filter">
+            <div class="g-container">
+                <div class="c-main-filter__short">
+                    <div class="c-main-filter-short__checked" id="filter-checked"></div>
+                    <button class="c-main-filter-short__button">
+                        <span class="c-main-filter-short-button__arrow">⏷</span>
+                        <span class="c-main-filter-short-button__cross"></span>
+                        <span class="c-main-filter-short-button__cross"></span>
+                    </button>
+                </div>
+                <ul class="c-main-filter__list">
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Fashion</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>Nail the 90s</li>
+                            <li>Casual style</li>
+                            <li>New Look</li>
+                            <li>Sport</li>
+                            <li>Vintage</li>
+                            <li>Classical style</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Product type</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>Coats & Jackets</li>
+                            <li>Dresses</li>
+                            <li>Jersey Tops</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Color</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>Black</li>
+                            <li>Blue</li>
+                            <li>Red</li>
+                            <li>Green</li>
+                            <li>Golden</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Brand</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>Chi Chi London</li>
+                            <li>Antipodium</li>
+                            <li>Adidas</li>
+                            <li>New Balance</li>
+                            <li>River Island</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Size</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>UK 2</li>
+                            <li>UK 18</li>
+                            <li>UK 18L</li>
+                            <li>UK 20</li>
+                            <li>UK 20L</li>
+                            <li>UK 20S</li>
+                            <li>UK 22S</li>
+                            <li>UK 22</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                    <li class="c-main-filter-list__item">
+                        <h3 class="c-main-filter-list-item__header">Price range</h3>
+                        <ul class="c-main-filter-list-item__list">
+                            <li>Not selected</li>
+                            <li>To &#163;99</li>
+                            <li>&#163;100-&#163;299</li>
+                            <li>From &#163;300</li>
+                        </ul>
+                        <span class="c-main-filter-list-item__arrow">⏷</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="c-main__catalog">
+            <div class="g-container">
+                <section class="c-main-catalog__block">
+                    <section class="c-main-catalog-block__list c-main-catalog-block__list_1" id="c-main-catalog-block__list_1"></section>
+                    <section class="c-main-catalog-block__banner">
+                        <p class="c-main-catalog-block-banner__header">Last weekend <span class="c-main-catalog-block-banner-header__red">extra 50%</span>
+                            <span class="cb-banner__header_mobile"><br></span> off on all reduced boots and
+                            <span class="cb-banner__header_mobile"><br></span> shoulder bags</p>
+                        <p class="c-main-catalog-block-banner__description">This offer is valid in-store and online.
+                            Prices displayed reflect this additional discount.
+                            This offer ends at 11:59 GMT on March 1st 2015</p>
+                    </section>
+                    <section class="c-main-catalog-block__list c-main-catalog-block__list_2" id="c-main-catalog-block__list_2"></section>
+                    <section class="c-main-catalog-block__more">
+                        <button class="c-main-catalog-block-more__button" id="show-more">Show more</button>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <footer class="g-main__banner">
+            <a href="item.html" class="g-main-banner__item g-main-banner__item-1 c-main-banner__item-1">
+                <div class="g-main-banner-item__description c-main-banner-item-1__description">
+                    <h2>Adidas Blue</h2>
+                    <p>For Men</p>
+                </div>
+            </a>
+            <a href="item.html" class="g-main-banner__item g-main-banner__item-2 c-main-banner__item-2">
+                <div class="g-main-banner-item__description c-main-banner-item-2__description">
+                    <h2>Repair Patches</h2>
+                    <p>&#163;150.50</p>
+                </div>
+            </a>
+            <a href="item.html" class="g-main-banner__item g-main-banner__item-3 c-main-banner__item-3">
+                <div class="g-main-banner-item__description c-main-banner-item-3__description">
+                    <h2>Sale</h2>
+                    <p>-70%</p>
+                </div>
+            </a>
+        </footer>
+    </main>
+
+    <footer class="g-footer">
+        <nav class="g-footer__block g-footer__quick-links">
+            <h3 class="g-footer-block__header">Quick Links</h3>
+            <ul class="g-footer-block__list">
+                <li><a href="#">Store locator</a></li>
+                <li><a href="#">Gift cards</a></li>
+                <li><a href="#">Size guide</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+        <nav class="g-footer__block g-footer__customer-care">
+            <h3 class="g-footer-block__header">Customer Care</h3>
+            <ul class="g-footer-block__list">
+                <li><a href="#">Customer service</a></li>
+                <li><a href="#">Track my order</a></li>
+                <li><a href="#">Return policy</a></li>
+                <li><a href="#">Shipping & delivery</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+        <div class="g-footer__block g-footer__questions">
+            <h3 class="g-footer-block__header">Questions</h3>
+            <img src="img/twitter_icon_grey.png" alt="twit icon" class="g-footer-block__icon">
+            <p class="g-footer-block__description"> Tweet us <strong>@template</strong></p>
+        </div>
+        <div class="g-footer__block g-footer__phone">
+            <h3 class="g-footer-block__header">Order by phone</h3>
+            <p class="g-footer-block__description">8-800-409-47-12</p>
+        </div>
+        <ul class="g-footer__private">
+            <li><a href="#">Legal notice</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Site map</a></li>
+        </ul>
+        <div class="g-footer__info">
+            <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days</p>
+        </div>
+        <div class="g-footer__social">
+            <a href="#"><img src="img/fb_icon.png" alt="facebook"></a>
+            <a href="#"><img src="img/twitter_icon_blue.png" alt="twitter"></a>
+        </div>
+        <div class="g-footer__copyright">
+            <p>&#169; 2010-2015, The Template Group inc.</p>
+        </div>
+        <div class="g-footer__share">
+            <p>Share <span>1 437</span></p>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+.it-main-header__button {
+    float: left;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    padding: 18px 0 0;
+    border: none;
+    color: rgb(0, 0, 0);
+    font: bold 12px "OpenSans", sans-serif;
+    vertical-align: middle;
+    text-align: left;
+    text-decoration: none;
+    background: none;
+}
+
+.it-main__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 296px;
+    padding: 69px 0 0;
+}
+
+.it-main-item__photo {
+    display: flex;
+    flex-direction: column;
+    height: calc((100vw - 40px) * (1066 * (4 / 3) / 1599));
+    width: 100%;
+}
+
+.it-main-item-photo__view {
+    box-sizing: border-box;
+    height: auto;
+    min-height: 220px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.it-main-item-photo__view img {
+    float: left;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.it-main-item-photo__collection {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 70px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.it-main-item-photo__collection:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% / 3);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.it-main-item-photo__collection_1:before { left: 0; }
+
+.it-main-item-photo__collection_2:before { left: 33.33%; }
+
+.it-main-item-photo__collection_3:before { left: 66.67%; }
+
+.it-main-item-photo__collection img {
+    float: left;
+    width: calc(100% / 3);
+    min-width: 100px;
+    max-width: 33.34%;
+    cursor: pointer;
+    cursor: url(../img/pointer.png) 10 0, pointer;
+}
+
+.it-main-item__info { padding: 45px 0 36px; }
+
+.it-main-item-info__description { text-align: center; }
+
+.it-main-item-info-description__name {
+    margin: 0 0 20px;
+    font: bold 20px "Roboto", sans-serif;
+}
+
+.it-main-item-info-description__price {
+    margin: 0 0 15px;
+    font: 18px "Roboto", sans-serif;
+}
+
+.it-main-item-info-description__about {
+    margin: 0 0 30px;
+    padding: 0 7px;
+    font: italic 15px "Crimson-Italic", serif;
+    line-height: 2.14;
+}
+
+.it-main-item-info__parameter {
+    height: 40px;
+    width: 100%;
+    vertical-align: middle;
+    margin: 0 0 30px;
+}
+
+.it-main-item-info__parameter:last-child { margin: 0; }
+
+.it-main-item-info-parameter__name {
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 55px;
+    margin: 0;
+    padding: 11px 0 0;
+    vertical-align: middle;
+    font: 12px "Roboto", sans-serif;
+}
+
+.it-main-item-info-parameter__list {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.it-main-item-info-parameter__list li {
+    float: left;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 80px;
+    margin: 0 0 0 20px;
+    padding: 7px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font: bold 14px "OpenSans", sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    cursor: url(../img/pointer.png) 10 0, pointer;
+}
+
+.it-main-item-info-parameter__list li:first-child { margin: 0; }
+
+.it-main-item-info-parameter__list li:hover,
+.it-main-item-buy__button:hover {
+    border: 1px solid rgb(241, 74, 88);
+    color: rgb(241, 74, 88);
+}
+
+.it-main-item-info-parameter__list li:active,
+.it-main-item-buy__button:active { background-color: rgb(247, 247, 247); }
+
+.it-main-item-info-parameter__list .info-list__parameter_border { border: 1px solid rgb(229, 229, 229); }
+
+.it-main-item__buy {
+    height: 175px;
+    width: 100%;
+    padding: 14px 0 0;
+    text-align: center;
+}
+
+.it-main-item-buy__button {
+    display: block;
+    height: 60px;
+    width: 218px;
+    margin: 0 auto;
+    border: 1px solid rgb(229, 229, 229);
+    font: bold 18px "Open Sans", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    background: none;
+    cursor: url(../img/pointer.png) 10 0, pointer;
+}
+
+.it-main-banner__item-1 { background: url(../img/adidas_blue.jpg) center / cover no-repeat; }
+
+.it-main-banner-item-1__description {
+    top: 36px;
+    right: 43px;
+    color: rgb(255, 255, 255);
+}
+
+.it-main-banner-item-1__description h2 {
+    margin: 0;
+    font: bold 20px "Open Sans", sans-serif;
+}
+
+.it-main-banner-item-1__description p {
+    margin: 5px 0 0 0;
+    font: italic 14px "Times New Roman", serif;
+}
+
+
+
+/*----- for screens more than 768px ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+
+    .it-main__item { padding-top: 95px; }
+
+    .it-main-header__button { font-size: 16px; }
+
+    .it-main-item__photo {
+        display: flex;
+        flex-direction: row;
+        height: calc((100vw - 78px) / 2);
+        width: 100%;
+    }
+
+    .it-main-item-photo__view {
+        height: auto;
+        width: 75%;
+        max-width: 75%;
+    }
+
+    .it-main-item-photo__view img {
+        float: left;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .it-main-item-photo__collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 25%;
+        min-width: 150px;
+        max-width: 25%;
+    }
+
+    .it-main-item-photo__collection:before {
+        height: calc(100% / 3);
+        width: 100%;
+    }
+
+    .it-main-item-photo__collection_1:before {
+        top: 0;
+        left: 0;
+    }
+
+    .it-main-item-photo__collection_2:before {
+        top: 33.33%;
+        left: 0;
+    }
+
+    .it-main-item-photo__collection_3:before {
+        top: 66.67%;
+        left: 0;
+    }
+
+    .it-main-item-photo__collection img {
+        float: left;
+        height: calc(100% / 3);
+        width: 100%;
+        min-width: 150px;
+        max-width: 100%;
+    }
+
+    .it-main-item__info { padding: 18px 0 36px; }
+
+    .it-main-item-info-description__about {
+        width: 450px;
+        margin: 0 auto 30px;
+    }
+
+    .it-main-item-info__parameter {
+        width: auto;
+        margin: 0 0 30px;
+        text-align: center;
+    }
+
+    .it-main-item-info-parameter__name {
+        float: none;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .it-main-item__buy {
+        height: 255px;
+        padding: 53px 0 0;
+    }
+
+    .it-main-item-buy__button {
+        width: 258px;
+        height: 68px;
+        font-size: 20px;
+    }
+
+    .it-main-banner-item-1__description { right: 60px; }
+
+    .it-main-banner-item-1__description h2 { font-size: 22px; }
+
+    .it-main-banner-item-1__description p { font-size: 16px; }
+
+    .it-main-banner__item-2 { background: url(../img/repair_patches.jpg) center / cover no-repeat; }
+
+    .it-main-banner-item-2__description {
+        bottom: 32px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+
+    .it-main-banner-item-2__description h2 {
+        margin: 0;
+        font: bold 22px "OpenSans", sans-serif;
+    }
+
+    .it-main-banner-item-2__description p {
+        margin: 10px 0 0 0;
+        font: 16px "Roboto", sans-serif;
+    }
+}
+
+
+/*----- for screens more than 1024px ----------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+    .it-main-header__button {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    .it-main__item {
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 191px;
+        -ms-grid-columns: 1fr 1fr;
+        -ms-grid-rows: 1fr 191px;
+        grid-template-areas: "photo info"
+                             "photo buy";
+        height: auto;
+        max-height: 525px;
+        padding: 124px 0 157px;
+    }
+
+    .it-main-item__photo {
+        grid-area: photo;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+        flex-direction: column;
+        max-height: 525px;
+    }
+
+    .it-main-item-photo__view {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .it-main-item-photo__collection {
+        flex-direction: row;
+        height: auto;
+        min-height: 100px;
+        max-height: 130px;
+        width: 100%;
+        min-width: 150px;
+        max-width: 100%;
+    }
+
+    .it-main-item-photo__collection:before {
+        height: 100%;
+        width: calc(100% / 3);
+    }
+
+    .it-main-item-photo__collection_2:before {
+        top: 0;
+        left: 33.33%;
+    }
+
+    .it-main-item-photo__collection_3:before {
+        top: 0;
+        left: 66.67%;
+    }
+
+    .it-main-item-photo__collection img {
+        height: auto;
+        width: 33.33%;
+        min-width: 150px;
+    }
+
+    .it-main-item__info {
+        grid-area: info;
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0 0 50px;
+    }
+
+    .it-main-item-info__description {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .it-main-item-info-description__name {
+        margin: 0 0 15px;
+        font-size: 26px;
+    }
+
+    .it-main-item-info-description__price {
+        order: 1;
+        margin: 0 0 40px;
+        font-size: 25px;
+    }
+
+    .it-main-item-info-description__about {
+        order: 0;
+        width: 100%;
+        margin: 0 0 35px;
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .it-main-item-info__parameter {
+        margin: 0 0 20px;
+        text-align: left;
+    }
+
+    .it-main-item__buy {
+        grid-area: buy;
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+        box-sizing: border-box;
+        height: auto;
+        max-height: 191px;
+        padding: 50px 0 0;
+    }
+
+    .it-main-item-buy__button {
+        height: 73px;
+        width: 338px;
+        font-size: 24px;
+    }
+
+    .it-main-banner-item-1__description {
+        top: 60px;
+        right: 80px;
+    }
+
+    .it-main-banner-item-1__description h2,
+    .it-main-banner-item-2__description h2 { font-size: 28px; }
+
+    .it-main-banner-item-1__description p { font-size: 16px; }
+
+    .it-main-banner__item-2 {
+        float: left;
+        width: 25%;
+    }
+
+    .it-main-banner-item-2__description { bottom: 50px; }
+
+    .it-main-banner__item-3 {
+        display: inline-block;
+        width: 25%;
+        background: rgb(255, 255, 255) url(../img/handbags.png) center / contain no-repeat;
+    }
+
+    .it-main-banner-item-3__description {
+        bottom: 50px;
+        width: 100%;
+        color: rgb(0, 0, 0);
+    }
+
+    .it-main-banner-item-3__description h2 {
+        margin: 0;
+        color: rgb(241, 74, 88);
+        font: bold 28px "OpenSans", sans-serif;
+    }
+
+    .it-main-banner-item-3__description p {
+        margin: 5px 0 0 0;
+        font: italic 16px "Crimson-Italic", serif;
+    }
+}
